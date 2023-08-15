@@ -74,7 +74,8 @@ jobs:
           file: ./Dockerfiles/APPS/nghttpx/nghttp2-by-apk.Dockerfile
           context: ./Dockerfiles/APPS/nghttpx/
           push: ${{ github.event_name != 'pull_request' }}
-          tags: by-apk
+          tags: ${{ steps.meta.outputs.tags }}
+          tag: by_apk
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
