@@ -5,4 +5,4 @@ RUN adduser -S -D -h /dev/null -s /sbin/nologin nghttpx && \
 	rm -rf /var/cache/apk/*
 
 USER nghttpx
-ENTRYPOINT ["/usr/bin/nghttpx", "--user=nghttpx"]
+ENTRYPOINT ["/usr/bin/nghttpx"]
