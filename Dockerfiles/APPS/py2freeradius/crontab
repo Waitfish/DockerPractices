@@ -1,1 +1,2 @@
-*/5 * * * * /app/squid2radius-py3.py $SQUID_LOG_PATH $FREERADIUS_SERVER_IP $FREERADIUS_SERVER_PASSWORD 2>&1; cat /dev/null>$SQUID_LOG_PATH 2>&1
+#*/5 * * * * /app/squid2radius-py3.py $SQUID_LOG_PATH $FREERADIUS_SERVER_IP $FREERADIUS_SERVER_PASSWORD 2>&1; cat /dev/null>$SQUID_LOG_PATH 2>&1
+*/5 * * * * /app/squid2radius-py3.py SQUID_LOG_PATH FREERADIUS_SERVER_IP FREERADIUS_SERVER_PASSWORD 2>&1; cat /dev/null>SQUID_LOG_PATH 2>&1
