@@ -1,4 +1,4 @@
-FROM  python:alpine3.18
+FROM python:alpine3.18
 RUN  pip install pyrad hurry.filesize 
 ADD ./ /app
 ADD crontab /etc/cron.d/my-cron-file
