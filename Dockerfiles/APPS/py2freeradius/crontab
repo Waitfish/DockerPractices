@@ -1,1 +1,1 @@
-*/5 * * * * python /app/squid2radius-py3.py $SQUID_LOG_PATH $FREERADIUS_SERVER $FREERADIUS_PASSWORD >&1 2>&1; cat /dev/null>$SQUID_LOG_PATH 2>&1
+*/5 * * * * python /app/squid2radius-py3.py $SQUID_LOG_PATH $FREERADIUS_SERVER $FREERADIUS_PASSWORD --no-rotation >&1 2>&1; cat /dev/null>$SQUID_LOG_PATH 2>&1
